@@ -2,7 +2,7 @@ import paseo.*
 describe "test de una familia que NO pasea" {
 
 //NOTA: Este fixture está incompleto y sirve para comenzar a testear el examen.
-//Es a modo de ayuda, pero no es obligatorio respetar este escenario. 
+//Es a modo de ayuda, pero no es obligatorio respetar este escenario.
 // Puede modificarse tanto como sea necesario.
 
 	//prenda par, la media izquierda tiene que tener 1 de desgaste, la derecha 3, el abrigo es default 0

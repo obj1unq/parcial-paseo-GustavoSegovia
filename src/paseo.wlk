@@ -2,7 +2,7 @@
 
 //Esta clase no debe existir, 
 //está para que el test compile al inicio del examen
-//al finalizar el examen hay que borrar esta clase
+//al finalizar el examen hay que borrar esta clase.
 
 
 
@@ -152,7 +152,7 @@ class Juguete{
 	var property max
 }
 
-//Objetos usados para los talles
+//Objetos usados para los talles.
 object xs {
 }
 
