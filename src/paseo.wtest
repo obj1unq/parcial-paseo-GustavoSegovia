@@ -90,27 +90,27 @@ describe "test de una familia que NO pasea" {
 		ojotasMilena.intercambiar(mediasZoe)
 		
 		assert.equals(mediaIzq, mediasZoe.elementoIzquierdo())
-		assert.equals(mediaDer, zapatillasZoe.elementoDerecho())
-		assert.equals(ojotaIzq, zapatillasZoe.elementoIzquierdo())
-		assert.equals(ojotaDer, mediasZoe.elementoDerecho())
+		assert.equals(mediaDer, mediasZoe.elementoDerecho())
+		assert.equals(ojotaIzq, ojotasMilena.elementoIzquierdo())
+		assert.equals(ojotaDer, ojotasMilena.elementoDerecho())
 	}
 
 //PUNTO 3	
-//	test "nivel de abrigo" {
-//		assert.equals(2 , /* abrigo de mediasZoe*/)
-//		assert.equals(2 , /* abrigo de zapatillasZoe*/)
-//		assert.equals(5 , /* abrigo de jeanZoe */)
-//		assert.equals(1 , /* abrigo de remeraZoe*/)
-//		assert.equals(3 , /* abrigo de camperaZoe*/)
-//		assert.equals(1 , /* abrigo de remeraMilena*/)		
-//		assert.equals(1 , /* abrigo de calzaMilena*/)
-//		assert.equals(5 , /* abrigo de ojotasMilena*/)
-//	}
+	test "nivel de abrigo" {
+		assert.equals(0 ,mediasZoe.nivelDeAbrigo())
+		assert.equals(2 ,zapatillasZoe.nivelDeAbrigo())
+		assert.equals(5 ,jeanZoe.nivelDeAbrigo())
+		assert.equals(1 ,remeraZoe.nivelDeAbrigo())
+		assert.equals(3 ,camperaZoe.nivelDeAbrigo())
+		assert.equals(1 ,remeraMilena.nivelDeAbrigo())		
+		assert.equals(1 ,calzaMilena.nivelDeAbrigo())
+		assert.equals(5 ,ojotasMilena.nivelDeAbrigo())
+	}
 
 //PUNTO 4		
 	test "puede salir de paseo" {
-		assert.that(familiaAptaSalir.puedePasear())
-		assert.notThat(familiaNoAptaParaSalir.puedePasear())
+		assert.that(familiaAptaSalir.listosParaPasear())
+		assert.notThat(familiaNoAptaParaSalir.listosParaPasear())
 	}
 //PUNTO 5
 	

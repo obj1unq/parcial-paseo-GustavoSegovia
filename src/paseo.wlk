@@ -57,9 +57,10 @@ class PrendaPar inherits Prenda{
 		return if(ninios.edad()<4){-1}else 0
 	}
 	method intercambiar(prendaPar){
-		if(self.talle()==prendaPar.talle()){
+		if(self.talle()== prendaPar.talle()){
+			var prenda=elementoDerecho
 			self.elementoDerecho(prendaPar.elementoDerecho()) 
-			prendaPar.elementoDerecho(self.elementoDerecho())
+			prendaPar.elementoDerecho(prenda)
 		}
 	}
 	override method nivelDeAbrigo(){
