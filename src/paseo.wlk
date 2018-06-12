@@ -1,10 +1,5 @@
 
 
-//Esta clase no debe existir, 
-//está para que el test compile al inicio del examen
-//al finalizar el examen hay que borrar esta clase.
-
-
 
 class Prenda{
 	var property talle
@@ -106,7 +101,7 @@ class Familia {
 	}
 	method salirAPasear(){
 		if(self.listosParaPasear()){
-			ninios.foreach({ninio=>ninio.usarPrendas()})
+			ninios.forEach({ninio=>ninio.usarPrendas()})
 		}
 	}
 }
@@ -128,10 +123,10 @@ class Ninio{
 		return (prendas.sum({prenda=>prenda.nivelDeCalidad(self)})/prendas.size()) > 8
 	}
 	method prendaDeMaximaCalidad(){
-		return prendas.max({prenda=>prenda.nivelDeCalidad()})
+		return prendas.max({prenda=>prenda.nivelDeCalidad(self)})
 	}
 	method usarPrendas(){
-		prendas.foreach({prenda=>prenda.usar()})
+		prendas.forEach({prenda=>prenda.usar()})
 	}
 }
 

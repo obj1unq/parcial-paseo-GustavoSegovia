@@ -115,19 +115,19 @@ describe "test de una familia que NO pasea" {
 //PUNTO 5
 	
 	test "infaltables" {
-		assert.equals(#{jeanZoe,calzaMilena}, familiaNoAptaParaSalir.infaltables())		
+		assert.equals(#{jeanZoe,calzaMilena}, familiaNoAptaParaSalir.prendasInfaltables())		
 	}
 	test "chiquitos" {
-		assert.equals(#{milena}, familiaNoAptaParaSalir.chiquitos()
+		assert.equals(#{milena}, familiaNoAptaParaSalir.losPequenos()
 		)		
 	}
 	
 //PUNTO 6	
 test "salir de paseo ok" {
-		familiaAptaSalir.pasear()
-		assert.equals(1.8 , mediaIzquierda.desgaste())
-		assert.equals(4.2 , mediaDerecha.desgaste())
-		assert.equals(3 , mediasZoe.desgaste())
+		familiaAptaSalir.salirAPasear()
+		assert.equals(0.8 , mediaIzquierda.desgaste())
+		assert.equals(1.2 , mediaDerecha.desgaste())
+		assert.equals(1 , mediasZoe.desgaste())
 		assert.equals(1 , zapatillasZoe.desgaste())
 		assert.equals(1 , jeanZoe.desgaste())
 		assert.equals(1 , remeraZoe.desgaste())
@@ -138,7 +138,8 @@ test "salir de paseo ok" {
 	test "salir de paseo no ok" {
 		//Que sucede si le pido pasear a una familia que no está lista?
 		//El test está incompleto!
-		familiaNoAptaParaSalir.pasear()
+		familiaNoAptaParaSalir.salirAPasear()
+		
 	}
 	
 	
